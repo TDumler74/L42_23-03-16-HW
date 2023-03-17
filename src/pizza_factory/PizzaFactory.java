@@ -54,7 +54,7 @@ public class PizzaFactory extends Main {
                 hawaii.box();
                 break;
             case 3:
-                Pizza mozzarella = new Salami();
+                Pizza mozzarella = new Mozzarela();
                 System.out.println(mozzarella.toString());
                 mozzarella.prepare();
                 mozzarella.bake();
