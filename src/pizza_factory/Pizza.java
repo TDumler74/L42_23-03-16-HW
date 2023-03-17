@@ -19,8 +19,6 @@ public  abstract class Pizza {
     public void box(){
         System.out.println("Your pizza will be packed");
     }
-
-    @Override
     public String toString() {
         return super.toString() ;
     }
