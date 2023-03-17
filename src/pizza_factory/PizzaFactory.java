@@ -34,7 +34,7 @@ public class PizzaFactory extends Main {
 
     public static int getOrder(int order) {
         int newOrder = order;
-        System.out.println(newOrder);
+
 
         switch (order) {
             case (1):
