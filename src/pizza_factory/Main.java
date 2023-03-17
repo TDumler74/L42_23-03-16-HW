@@ -50,5 +50,16 @@ public class Main {
             default:
                 System.out.println("Bitte treffen Sie eine wahl!");
         }
+        /*
+        Which pizza would you like to order ?
+        Enter 1 for Salami; 2 for Hawaii ; 3 for Mozzarella
+        2
+        Pizza Hawaii with topping : pineaple,mozzarella cheese, tomato sauce
+        Pizza is being prepared
+        Pizza is baked
+        We cut the pizza
+        Your pizza will be packed
+
+         */
     }
 }
