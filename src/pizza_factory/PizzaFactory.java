@@ -1,4 +1,5 @@
 package pizza_factory;
+
 import java.util.Scanner;
  /*
    1. Cоздать фабрику по производству пиццы. Фабрика должна уметь готовить следующие виды пиццы:
@@ -28,26 +29,44 @@ import java.util.Scanner;
          виде switch. В свитче использовать энум?
          */
 
-public  class PizzaFactory {
-   /* Pizza salami = new Salami("Salami");
+public class PizzaFactory extends Main {
+    int newOrder;
 
-    Pizza hawaii = new Hawaii("Hawaii");
-    Pizza mozzarella = new Mozzarela("Mozzarella");*/
+    public static int getOrder(int order) {
+        int newOrder = order;
+        System.out.println(newOrder);
 
-
-
-
-     /*  if (order==1){
-           Pizza salami = new Salami("Salami", "salami,mozzarella cheese, tomato sauce");
-           System.out.println(salami.getName());
-       }else if(order ==2){
-            Pizza hawaii = new Hawaii("Hawai", "pineaple,mozzarella cheese, tomato sauce");
-            System.out.println(hawaii.toString());
-       }else if (order==3){
-           Pizza mozzarella = new Mozzarela("Mozzarella", "mozzarella cheese, tomato sauce, basilicum");
-           System.out.println(mozzarella.toString());
-       }return ;*/
+        switch (order) {
+            case (1):
+                Pizza salami = new Salami();
+                System.out.println(salami.toString());
+                salami.prepare();
+                salami.bake();
+                salami.cutPizza();
+                salami.box();
+                break;
+            case 2:
+                Pizza hawaii = new Hawaii();
+                System.out.println(hawaii.toString());
+                hawaii.prepare();
+                hawaii.bake();
+                hawaii.cutPizza();
+                hawaii.box();
+                break;
+            case 3:
+                Pizza mozzarella = new Salami();
+                System.out.println(mozzarella.toString());
+                mozzarella.prepare();
+                mozzarella.bake();
+                mozzarella.cutPizza();
+                mozzarella.box();
+                break;
+            default:
+                System.out.println("Please make your choice! ");
+        }
+        return order;
     }
+}
 
 
 

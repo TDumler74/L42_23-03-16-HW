@@ -26,40 +26,16 @@ public class Main {
         System.out.println("Enter 1 for Salami; 2 for Hawaii ; 3 for Mozzarella");
         Scanner sc = new Scanner(System.in);
         int order = sc.nextInt();
+        PizzaFactory.getOrder(order);
 
-        switch (order) {
-            case (1):
-                Pizza salami=new Salami();
-                System.out.println(salami.toString());
-                salami.prepare();
-                salami.bake();salami.cutPizza();salami.box();
-                break;
-            case 2:
-                Pizza hawaii=new Hawaii();
-                System.out.println(hawaii.toString());
-                hawaii.prepare();
-                hawaii.bake();hawaii.cutPizza();hawaii.box();
-                break;
-            case 3:
-                Pizza mozzarella=new Salami();
-                System.out.println(mozzarella.toString());
-                mozzarella.prepare();
-                mozzarella.bake();mozzarella.cutPizza();
-                mozzarella.box();
-                break;
-            default:
-                System.out.println("Bitte treffen Sie eine wahl!");
-        }
         /*
         Which pizza would you like to order ?
         Enter 1 for Salami; 2 for Hawaii ; 3 for Mozzarella
         2
-        Pizza Hawaii with topping : pineaple,mozzarella cheese, tomato sauce
+        Pizza Hawaii with topping : pineapple, mozzarella cheese, tomato sauce
         Pizza is being prepared
         Pizza is baked
         We cut the pizza
-        Your pizza will be packed
-
-         */
+        Your pizza will be packed */
     }
 }
