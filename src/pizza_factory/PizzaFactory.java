@@ -1,7 +1,6 @@
 package pizza_factory;
 
-import java.util.Scanner;
- /*
+/*
    1. Cоздать фабрику по производству пиццы. Фабрика должна уметь готовить следующие виды пиццы:
     Гавайи, Моцарелла,Салями.
 
@@ -54,7 +53,7 @@ public class PizzaFactory extends Main {
                 hawaii.box();
                 break;
             case 3:
-                Pizza mozzarella = new Mozzarela();
+                Pizza mozzarella = new Mozzarella();
                 System.out.println(mozzarella.toString());
                 mozzarella.prepare();
                 mozzarella.bake();
